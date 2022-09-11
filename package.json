@@ -1,0 +1,21 @@
+{
+  "name": "zeppo",
+  "version": "1.4.0",
+  "description": "Convert between numbers of different bases.",
+  "main": "./src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angeldollface/zeppo.git"
+  },
+  "keywords": [
+    "security",
+    "passwords"
+  ],
+  "type": "module",
+  "author": "Alexander Abraham <angeldollface666@gmail.com> (http://angeldollface.art)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angeldollface/zeppo/issues"
+  },
+  "homepage": "https://github.com/angeldollface/zeppo#readme"
+}
