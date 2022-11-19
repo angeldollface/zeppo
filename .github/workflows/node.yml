@@ -17,6 +17,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: "Installing the example's dependencies."
-        run: cd example && npm install git+https://github.com/angeldollface/zeppo --save-dev
+        run: cd example && npm install
       - name: "Running the example."
         run: node .
