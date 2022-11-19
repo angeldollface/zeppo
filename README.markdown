@@ -10,9 +10,9 @@ Roughly a year ago, I set myself the challenge of implementing a set of function
 
 ## USAGE :hammer:
 
-### Use ***Zeppo*** in a Node.js project
+### Use *Zeppo* in a Node.js project
 
-To use ***Zeppo*** in a Node.js project, run this command in your project's root directory:
+To use *Zeppo* in a Node.js project, run this command in your project's root directory:
 
 ```bash
 $ npm install --save-dev zeppo
@@ -22,7 +22,7 @@ Be sure to also add the `"type":"module"` flag to your project's manifest, `pack
 
 ### APIs
 
-***Zeppo*** offers the following functions:
+*Zeppo* offers the following functions:
 
 - `reverseArray(array)`: Reverses the order of an array and returns the reversed array.
 - `letterIndex(letter)`: Gets the index of a letter in the alphabet. Returns zero if the letter isn't in the alphabet.
@@ -44,7 +44,7 @@ Here's a small example:
 $ npm init -y 
 ```
 
-- 2.) Install ***Zeppo***:
+- 2.) Install *Zeppo*:
 
 ```bash
 $ npm install --save-dev zeppo
@@ -60,7 +60,7 @@ $ npm install --save-dev zeppo
 
 ```js
 // index.js
-import zeppo from 'zeppo';
+import * as zeppo from 'zeppo';
 
 function main(){
   var myNum = 21;
@@ -107,6 +107,11 @@ $ node .
 
 - Updated documentation.
 - Updated, published, and uploaded under my new name.
+
+### Version 1.5.0
+
+- Fixed some administrative issues.
+- Fixed some formatting issues.
 
 ## NOTE :scroll:
 
