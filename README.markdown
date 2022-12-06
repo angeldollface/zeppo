@@ -20,6 +20,14 @@ $ npm install --save-dev zeppo
 
 Be sure to also add the `"type":"module"` flag to your project's manifest, `package.json`.
 
+### Use *Zeppo* in a Node.js project with Typescript
+
+Add a file called `zeppo.d.ts` to your project and put the following code inside it:
+
+```Typescript
+declare module 'zeppo';
+```
+
 ### APIs
 
 *Zeppo* offers the following functions:
@@ -112,6 +120,11 @@ $ node .
 
 - Fixed some administrative issues.
 - Fixed some formatting issues.
+
+### Version 1.6.0
+
+- Updated `export` statement.
+- Updated documentation for Typescript.
 
 ## NOTE :scroll:
 
