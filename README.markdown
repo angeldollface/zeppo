@@ -20,7 +20,7 @@ $ npm install --save-dev zeppo
 
 Be sure to also add the `"type":"module"` flag to your project's manifest, `package.json`.
 
-### Use *Zeppo* in a Node.js project with Typescript
+### Use *Zeppo* in a Node.js project with Typescript :gear:
 
 Add a file called `zeppo.d.ts` to your project and put the following code inside it:
 
@@ -41,6 +41,16 @@ declare module 'zeppo';
 - `isBin(expr)`: Checks whether the supplied string is a binary number or not.
 - `isInt(expr)`: Checks whether the supplied string is an integer or not.
 - `testAll()`: Tests all of the above.
+
+### Use *Zeppo* in a Deno project :t-rex:
+
+To use *Zeppo* in a Deno project, add this line of code to your Typescript file(s):
+
+```Typescript
+import { functionName } from 'https://deno.land/x/zeppo@v.1.7.0/src/index.js';
+```
+
+`functionName` represents any of the function signatures above.
 
 ### Example
 
