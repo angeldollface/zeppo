@@ -2,8 +2,6 @@
   "name": "zeppo",
   "version": "1.8.0",
   "description": "Convert between numbers of different bases.",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/angeldollface/zeppo.git"
