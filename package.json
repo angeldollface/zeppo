@@ -11,6 +11,8 @@
     "passwords"
   ],
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "author": "Angel Dollface",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
