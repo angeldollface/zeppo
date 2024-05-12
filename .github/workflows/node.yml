@@ -19,6 +19,6 @@ jobs:
       - name: "Installing the example's dependencies."
         run: cd example && npm install
       - name: "Running the Typescript compiler."
-        run: npx tsc
+        run: cd example && npx tsc
       - name: "Running the example."
         run: node .
