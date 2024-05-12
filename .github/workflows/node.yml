@@ -18,5 +18,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: "Installing the example's dependencies."
         run: cd example && npm install
+      - name: "Running the Typescript compiler."
+        run: npx tsc
       - name: "Running the example."
         run: node .
