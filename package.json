@@ -17,9 +17,6 @@
     "url": "https://github.com/angeldollface/zeppo/issues"
   },
   "homepage": "https://github.com/angeldollface/zeppo#readme",
-  "files": [
-    "./dist"
-  ],
   "scripts": {
     "test": "jest"
   },
