@@ -18,5 +18,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: "Installing the example's dependencies."
         run: cd example && npm install
-      - name: "Running tests."+
+      - name: "Running tests."
         run: "npm test"
