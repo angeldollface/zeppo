@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: "Installing the example's dependencies."
-        run: cd example && npm install
+      - name: "Installing dependencies."
+        run: npm install
       - name: "Running tests."
         run: "npm test"
