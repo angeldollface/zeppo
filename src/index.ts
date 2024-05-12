@@ -113,33 +113,7 @@ export function isBin(expr: string): boolean {
 // A function to check whether a string
 // is an integer.
 export function isInt(expr: string): boolean {
-  let result: boolean = false;
-  if (!Number.isNaN(expr) === true) {}
-  else {
-      result = true;
-  }
-  return result;
-}
-
-// Tests all of the above.
-export function testAll(){
-  let testArray = [1,2,3,4];
-  let testLetter = 'b';
-  console.log(letterIndex(testLetter));
-  console.log(getLetterFromIndex(letterIndex(testLetter)));
-  let binaryNum = '10101';
-  console.log(binToDec(binaryNum));
-  console.log(decToBin(21));
-  let testHexNum = 'FF7BAC';
-  let testBinNum = '1010101';
-  let impostorBin = '1010101A';
-  let testInt = '10';
-  let impostorInt = 'AB';
-  console.log(hexToDec(testHexNum));
-  console.log(isBin(testBinNum));
-  console.log(isBin(impostorBin));
-  console.log(isInt(testInt));
-  console.log(isInt(impostorInt));
+	return RegExp('[0-9]+').test(expr);
 }
 
 // Exporting all functions.
@@ -150,6 +124,5 @@ export default {
     getLetterFromIndex,
     hexToDec,
     isBin,
-    isInt,
-    testAll
+    isInt
 };
