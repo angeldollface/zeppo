@@ -32,7 +32,6 @@ declare module 'zeppo';
 
 *Zeppo* offers the following functions:
 
-- `reverseArray(array)`: Reverses the order of an array and returns the reversed array.
 - `letterIndex(letter)`: Gets the index of a letter in the alphabet. Returns zero if the letter isn't in the alphabet.
 - `getLetterFromIndex(index)`: Gets the letter from a supplied index. Returns an empty string if a letter cannot be found.
 - `binToDec(binaryNumber)`: Converts a base 2 number to a base 10 number.
@@ -47,7 +46,7 @@ declare module 'zeppo';
 To use *Zeppo* in a Deno project, add this line of code to your Typescript file(s):
 
 ```Typescript
-import { functionName } from 'https://deno.land/x/zeppo@v.1.7.0/src/index.js';
+import { functionName } from 'https://deno.land/x/zeppo@v.1.8.0/src/index.js';
 ```
 
 `functionName` represents any of the function signatures above.
@@ -136,7 +135,17 @@ $ node .
 - Updated `export` statement.
 - Updated documentation for Typescript.
 
+### Version 1.7.0
+
+- Added support for Deno.
+
+### Version 1.8.0
+
+- Removed the `reverseArray` function.
+- Rewrote the project in Typescript.
+- Relicensed the project under the [DSL v1](https://github.com/angeldollface/doll-software-license).
+
 ## NOTE :scroll:
 
 - *Zeppo :crystal_ball: :guitar:* by Alexander Abraham :black_heart: a.k.a. *"Angel Dollface" :dolls: :ribbon:*
-- Licensed under the MIT license.
+- Licensed under the [DSL v1](https://github.com/angeldollface/doll-software-license).

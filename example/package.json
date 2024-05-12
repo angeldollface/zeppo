@@ -5,7 +5,6 @@
     "main": "index.js",
     "keywords": [],
     "author": "",
-    "license": "MIT",
     "type": "module",
     "dependencies" : {
         "zeppo":"git://github.com/angeldollface/zeppo.git"

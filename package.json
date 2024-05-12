@@ -1,8 +1,9 @@
 {
   "name": "zeppo",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Convert between numbers of different bases.",
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/angeldollface/zeppo.git"
@@ -12,10 +13,16 @@
     "passwords"
   ],
   "type": "module",
-  "author": "Alexander Abraham (http://angeldollface.art)",
-  "license": "MIT",
+  "author": "Angel Dollface",
+  "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://github.com/angeldollface/zeppo/issues"
   },
-  "homepage": "https://github.com/angeldollface/zeppo#readme"
+  "homepage": "https://github.com/angeldollface/zeppo#readme",
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+	"files": [
+		"./dist"
+	]
 }
