@@ -21,7 +21,7 @@
   "homepage": "https://github.com/angeldollface/zeppo#readme",
   "dependencies": {
     "typescript": "^5.4.5"
-  }
+  },
 	"files": [
 		"./dist"
 	]
