@@ -116,6 +116,22 @@ export function isInt(expr: string): boolean {
 	return RegExp('[0-9]+').test(expr);
 }
 
+// A function to check whether a string
+// is a hexadecimal number.
+export function isHex(hexNum: string): boolean {
+	let result: boolean = true;
+	let alphabet: Array<string> = "123456789ABCDEF".split('');
+	let numChars: Array<string> = hexNum.split('');
+	for (let i: number = 0; i < numChars.length; i++){
+		let numChar: string = numChars[i];
+		if (alphabet.includes(numChar) === true){}
+		else {
+			result = false;
+		}
+	}
+	return result;
+}
+
 // Exporting all functions.
 export default {
     decToBin,
@@ -124,5 +140,6 @@ export default {
     getLetterFromIndex,
     hexToDec,
     isBin,
-    isInt
+    isInt,
+		isHex
 };

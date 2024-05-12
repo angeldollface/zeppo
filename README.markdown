@@ -39,7 +39,7 @@ declare module 'zeppo';
 - `hexToDec(hexNumber)`: Converts a base 16 number to a base 10 number.
 - `isBin(expr)`: Checks whether the supplied string is a binary number or not.
 - `isInt(expr)`: Checks whether the supplied string is an integer or not.
-- `testAll()`: Tests all of the above.
+- `isHex(expr)`: Checks whether the supplied string is a hexadecimal number or not.
 
 ### Use *Zeppo* in a Deno project :t-rex:
 
@@ -142,6 +142,9 @@ $ node .
 ### Version 1.8.0
 
 - Removed the `reverseArray` function.
+- Removed the `testAll` function.
+- Added unit tests with Jest.
+- Added a function to check whether a string is a hexadecimal number or not.
 - Rewrote the project in Typescript.
 - Relicensed the project under the [DSL v1](https://github.com/angeldollface/doll-software-license).
 

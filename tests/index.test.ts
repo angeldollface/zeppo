@@ -104,3 +104,25 @@ describe(
 		);
 	}
 );
+
+describe(
+	"Testing the \"isHex\" function. (true case)",
+	() => {
+		test(
+			"FF7BAC should yield true.", () => {
+				expect(zeppo.isHex("FF7BAC")).toBe(true);
+			}
+		);
+	}
+);
+
+describe(
+	"Testing the \"isHex\" function. (false case)",
+	() => {
+		test(
+			"FF7BAX should yield false.", () => {
+				expect(zeppo.isHex("FF7BAX")).toBe(false);
+			}
+		);
+	}
+);
