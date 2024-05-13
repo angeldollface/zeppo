@@ -1,5 +1,5 @@
 /*
-ZEPPO.JS by Alexander Abraham, 
+ZEPPO by Alexander Abraham, 
 a.k.a. "Angel Dollface".
 Licensed under the DSL v1.
 */
@@ -36,62 +36,6 @@ export function getLetterFromIndex(index: number): string{
         else {}
     }
     return result;
-}
-
-// Converts a base 2 number to a base 10 number.
-export function binToDec(binaryNumber: string): string {
-    let origDigitsList: Array<string> = binaryNumber.split('');
-    let digitsList: Array<string> = origDigitsList.reverse();
-    var lenDigitsList: number = digitsList.length;
-    var decimalSum: number = 0;
-    for (let i: number = 0; i < lenDigitsList; i++) {
-      if (digitsList[i] == '1') {
-        let toAdd: number = Math.pow(2, i);
-        decimalSum = decimalSum + toAdd;
-      } else {}
-    }
-    let result = decimalSum.toString();
-    return result;
-}
-
-// Converts a base 10 number to a base 2 number.
-export function decToBin(decimalNumber: number): string {
-    let endChars: Array<string> = [];
-    let dec: number = decimalNumber;
-    let initItem: number = dec % 2;
-    var startDigit: string = initItem.toString();
-    endChars.push(startDigit);
-    while (Math.floor(dec / 2) != 0) {
-      dec = Math.floor(dec / 2);
-      let itemOneToAdd: number = dec % 2;
-      var itemTwoToAdd: string = itemOneToAdd.toString();
-      endChars.push(itemTwoToAdd);
-    }
-    let reversedChars: Array<string> = endChars.reverse();
-    let result: string = reversedChars.join('');
-    return result;
-}
-
-// Converts a base 16 number to a base 10 number.
-export function hexToDec(hexNumber: string): string {
-    let base: number = 16;
-    let result: number = 0;
-    let digitSetString: string = '0123456789ABCDEF';
-    let digitSet: Array<string> = digitSetString.split('');
-    let hexCharsBase: Array<string> = hexNumber.split('');
-    let hexChars: Array<string> = hexCharsBase.reverse();
-    for (let i: number = 0; i < hexChars.length; i++) {
-      let hexChar: string = hexChars[i];
-      if (digitSet.includes(hexChar) === true) {
-        let posMul: number = digitSet.indexOf(hexChar);
-        let posPower: number = Math.pow(base, i);
-        let posProduct: number = posMul * posPower;
-        result = result + posProduct;
-      } else {
-        throw 'Illegal character found!';
-      }
-    }
-    return result.toString();
 }
 
 // Checks whether the supplied number is 
@@ -134,11 +78,8 @@ export function isHex(hexNum: string): boolean {
 
 // Exporting all functions.
 export default {
-    decToBin,
-    binToDec,
     letterIndex,
     getLetterFromIndex,
-    hexToDec,
     isBin,
     isInt,
 		isHex
