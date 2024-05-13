@@ -2,8 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es6",
-    "outDir": "./dist",
-    "moduleResolution": "node"
+    "outDir": "./dist"
   },
   "include": [
     "src/**/*"
