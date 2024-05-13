@@ -10,23 +10,9 @@ Roughly a year ago, I set myself the challenge of implementing a set of function
 
 ## USAGE :hammer:
 
-### Use *Zeppo* in a Node.js project
+### Use *Zeppo* in a Deno project
 
-To use *Zeppo* in a Node.js project, run this command in your project's root directory:
 
-```bash
-$ npm install --save-dev zeppo
-```
-
-Be sure to also add the `"type":"module"` flag to your project's manifest, `package.json`.
-
-### Use *Zeppo* in a Node.js project with Typescript :gear:
-
-Add a file called `zeppo.d.ts` to your project and put the following code inside it:
-
-```Typescript
-declare module 'zeppo';
-```
 
 ### APIs
 
@@ -53,37 +39,11 @@ import { functionName } from 'https://deno.land/x/zeppo@v.1.8.0/src/index.js';
 
 ### Example
 
-Here's a small example:
+```Typescript
+import { isBin } from 'https://raw.githubusercontent.com/angeldollface/zeppo/main/mod.ts';
 
-- 1.) Initialize a new Node.js project with the following command in a directory of your choosing:
-
-```bash
-$ npm init -y 
-```
-
-- 2.) Install *Zeppo*:
-
-```bash
-$ npm install --save-dev zeppo
-```
-
-- 3.) Be sure to add this line to your project's `package.json`:
-
-```JSON
-"type":"module",
-```
-
-- 4.) Create your `index.js` and put the following code inside it:
-
-```js
-// index.js
-import * as zeppo from 'zeppo';
-
-function main(){
-  var myNum = 21;
-  console.log(zeppo.decToBin(myNum));
-  // Should output 21.
-  console.log(zeppo.binToDec(decToBin(myNum)));
+function main(): void {
+  console.log(isBin("101010"));
 }
 
 main();
