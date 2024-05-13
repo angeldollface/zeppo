@@ -1,6 +1,6 @@
 # ZEPPO :crystal_ball: :guitar:
 
-![GitHub CI](https://github.com/angeldollface/zeppo/actions/workflows/node.yml/badge.svg)
+![GitHub CI](https://github.com/angeldollface/zeppo/actions/workflows/deno.yml/badge.svg)
 
 ***Convert between numbers of different bases.*** :crystal_ball: :guitar:
 
