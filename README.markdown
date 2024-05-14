@@ -10,10 +10,6 @@ Roughly a year ago, I set myself the challenge of implementing a set of function
 
 ## USAGE :hammer:
 
-### Use *Zeppo* in a Deno project
-
-
-
 ### APIs
 
 *Zeppo* offers the following functions:
@@ -29,33 +25,21 @@ Roughly a year ago, I set myself the challenge of implementing a set of function
 
 ### Use *Zeppo* in a Deno project :t-rex:
 
-To use *Zeppo* in a Deno project, add this line of code to your Typescript file(s):
+- 1.) Create a Typescript file.
+
+- 2.) To use *Zeppo* in a Deno project, add this line of code to your Typescript file(s) (`functionName` represents any of the function signatures above.):
 
 ```Typescript
-import { functionName } from 'https://deno.land/x/zeppo@v.1.8.0/src/index.js';
+import { functionName } from 'https://deno.land/x/zeppo/mod.ts';
 ```
 
-`functionName` represents any of the function signatures above.
+- 3.) You can now use any of the function signatures above.
 
-### Example
-
-```Typescript
-import { isBin } from 'https://raw.githubusercontent.com/angeldollface/zeppo/main/mod.ts';
-
-function main(): void {
-  console.log(isBin("101010"));
-}
-
-main();
-```
-
-- 5.) Run the project:
+- 4.) You can run the Typescript file with Deno using this command (`your_script.ts` represents your Typescript file.):
 
 ```bash
-$ node .
+deno run your_script.ts
 ```
-
-- 6.) Optional: If you're not sure how to use this project, check out the example project.
 
 ## CHANGELOG :black_nib:
 
@@ -103,9 +87,10 @@ $ node .
 
 - Removed the `reverseArray` function.
 - Removed the `testAll` function.
-- Added unit tests with Jest.
+- Added unit tests with Deno.
 - Added a function to check whether a string is a hexadecimal number or not.
 - Rewrote the project in Typescript.
+- Migrated this project from Node.js to Deno.
 - Relicensed the project under the [DSL v1](https://github.com/angeldollface/doll-software-license).
 
 ## NOTE :scroll:
